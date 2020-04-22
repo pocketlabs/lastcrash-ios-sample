@@ -12,12 +12,12 @@ import LastCrash
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, LastCrashDelegate {
 
-
+    let LASTCRASH_API_KEY = "<REPLACE WITH YOUR LASTCRASH PROVIDED API KEY>"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        LastCrash.configure("hello_world")
+        LastCrash.configure(LASTCRASH_API_KEY)
         LastCrash.enabledLogging()
         LastCrash.setDelegate(self)
         
