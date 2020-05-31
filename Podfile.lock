@@ -1,16 +1,16 @@
 PODS:
-  - LastCrash (1.0.0)
+  - LastCrash (1.0.1)
 
 DEPENDENCIES:
-  - LastCrash
+  - LastCrash (= 1.0.1)
 
 SPEC REPOS:
   trunk:
     - LastCrash
 
 SPEC CHECKSUMS:
-  LastCrash: 731e5b91d82043f8bb2cc931f59e8aecd3101f09
+  LastCrash: 318445ee95a67cea52edd6df7ad8881d038e9f4c
 
-PODFILE CHECKSUM: 842db9f6d2e2ab388f526110855a6180610e4ba6
+PODFILE CHECKSUM: 068a35ee8cadb2347f28fed6849600476fd5eb2a
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3
