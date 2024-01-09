@@ -1,0 +1,6 @@
+framework module LastCrash {
+  umbrella header "LastCrash.h"
+  export *
+
+  module * { export * }
+}
