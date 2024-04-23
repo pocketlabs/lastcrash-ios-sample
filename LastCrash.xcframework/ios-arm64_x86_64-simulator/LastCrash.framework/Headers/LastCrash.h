@@ -29,4 +29,7 @@ FOUNDATION_EXPORT const unsigned char LastCrashVersionString[];
 +(void)pause;
 +(void)unpause;
 +(void)send;
++(void)event:(NSString*)name;
++(void)event:(NSString*)name value:(NSString*)value;
++(void)applicationInitialized;
 @end
