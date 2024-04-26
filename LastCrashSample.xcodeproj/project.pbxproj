@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A2AE95C2BDB78FB009390C2 /* LastCrash.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6A4F65672B4DED8500735EE6 /* LastCrash.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6A4F655A2B4DED4D00735EE6 /* LastCrashSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F65592B4DED4D00735EE6 /* LastCrashSampleApp.swift */; };
 		6A4F655C2B4DED4D00735EE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F655B2B4DED4D00735EE6 /* ContentView.swift */; };
 		6A4F655E2B4DED4E00735EE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A4F655D2B4DED4E00735EE6 /* Assets.xcassets */; };
@@ -14,6 +15,19 @@
 		6A4F65682B4DED8500735EE6 /* LastCrash.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A4F65672B4DED8500735EE6 /* LastCrash.xcframework */; };
 		6A4F656A2B4DED9700735EE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4F65692B4DED9700735EE6 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6A2AE95B2BDB78F5009390C2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6A2AE95C2BDB78FB009390C2 /* LastCrash.xcframework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6A4F65562B4DED4D00735EE6 /* LastCrashSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LastCrashSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +96,7 @@
 			buildConfigurationList = 6A4F65642B4DED4E00735EE6 /* Build configuration list for PBXNativeTarget "LastCrashSample" */;
 			buildPhases = (
 				6A4F65522B4DED4D00735EE6 /* Sources */,
+				6A2AE95B2BDB78F5009390C2 /* CopyFiles */,
 				6A4F65532B4DED4D00735EE6 /* Frameworks */,
 				6A4F65542B4DED4D00735EE6 /* Resources */,
 			);
