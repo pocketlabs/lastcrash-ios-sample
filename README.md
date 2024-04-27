@@ -13,7 +13,7 @@
 
 ### Optional Delegate
 
-Setting the delegate is optional.  If you would like to control the logic behind sending the crash the implement the `LastCrashDelegate` interface and call `setDelegate`.
+Setting the delegate is optional.  If you would like to control the logic behind sending crash reports then implement the `LastCrashDelegate` interface and call `setDelegate`.
 
 The `lastCrashDidCrash` method will be called when crash reports are available to send.  This allows you to implement your own logic or ask the user for permission to send crash reports.
 
