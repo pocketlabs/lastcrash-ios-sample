@@ -6,11 +6,15 @@
 	<dict>
 		<key>Headers/LastCrash.h</key>
 		<data>
-		E/DUWgs1bM4GJFqtEt1dpS+7T+c=
+		9fo+LG0NaWigezkwlFO2UkSRwlU=
+		</data>
+		<key>Headers/LastCrashURLProtocol.h</key>
+		<data>
+		7mWm/epaVfJhRzrGtM7DeRna+Pk=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yLU1cuR/yhq+F5eyFUWmkqpeuvg=
+		TfkPtHsla9SsrXBX118Bc3kmSqQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -23,7 +27,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rIT7A/m1ODVJImtozAKFXdFtldl4s19xnBU6i2znVx8=
+			DBMKJD5hGCXZ2UmfT7Q3/bcocYo7wWNKfBisR00Sank=
+			</data>
+		</dict>
+		<key>Headers/LastCrashURLProtocol.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2T3lxtj8M5mRe31FJ3aJU91wXDoiPmEJLOz+5V68Hh4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
