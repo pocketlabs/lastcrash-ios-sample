@@ -1,0 +1,26 @@
+#!/bin/sh
+
+if [[ $1 = '' ]]; then
+    echo "LastCrash API Key required"
+    exit 1
+fi
+
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+COMMAND_PATH="\"$DIR/lastcrash-upload-artifacts\" "
+ARGUMENTS="$1"
+
+iterator=0
+while [ $iterator -lt $SCRIPT_INPUT_FILE_COUNT ]
+do
+    input_name="SCRIPT_INPUT_FILE_$iterator"
+    file_path="${!input_name}"
+    ARGUMENTS="$ARGUMENTS \"$file_path\""
+    iterator=$(( $iterator + 1 ))
+done
+
+eval $COMMAND_PATH$ARGUMENTS
+return_code=$?
+
+if [[ $return_code != 0 ]]; then
+  exit $return_code
+fi
