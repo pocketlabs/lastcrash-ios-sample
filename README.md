@@ -33,6 +33,32 @@ The reason this call to `LastCrash.applicationInitialized()` is required is to s
 
 All text that isn't part of the app's localization files will be redacted on device to prevent any user or customer PII from being captured.  Ensure that all user interface elements are utilizing localization strings to get the most value out of the recorded crash videos.
 
+#### SwiftUI masking
+
+In order to mask SwiftUI views copy the `LastCrashMasking.swift` file into your application.
+
+Add the following overlay to the view you would like to mask:
+
+```swift
+Image(systemName: "heart.fill")
+  .imageScale(.large)
+  .foregroundStyle(.tint)
+  .overlay(LastCrashMask("MaskedImage"))
+```
+
+Then add the following `onPreferenceChange` to the container view detect masked views via preferences and the `onDisappear` block to remove the masked views:
+
+```swift
+View {
+  VStack {
+    // content
+  }.onPreferenceChange(LastCrashMaskPositionKey.self, perform: lastCrashOnPreferenceChange)
+    .onDisappear {
+      LastCrash.removeMaskRect("MaskedImage")
+    }
+}
+```
+
 #### View based masking
 
 Views can be explicitly masked by passing a View object reference or by view id.  An important note: it is your responsibility to manage the masked view lifecycle to add and remove masked views as they are shown on the screen.

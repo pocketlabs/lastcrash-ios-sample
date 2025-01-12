@@ -25,8 +25,13 @@ struct ContentView: View {
             Button("unpause_recording") {
                 LastCrash.unpause()
             }
+            Image(systemName: "heart.fill")
+                .imageScale(.large)
+                .foregroundStyle(.tint).overlay(LastCrashMask("MaskedImage"))
         }
-        .padding()
+        .padding().onPreferenceChange(LastCrashMaskPositionKey.self, perform: lastCrashOnPreferenceChange).onDisappear {
+            LastCrash.removeMaskRect("MaskedImage")
+        }
     }
 }
 
